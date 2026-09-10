@@ -17,6 +17,10 @@ NPM registry management for [DeepSeek Harness](https://github.com/deepseek-ai/ds
 | `npm_publish` | Real `npm publish` — supports `dir`, `tag`, `access`, `otp`, `registry`, `dryRun`, `force` |
 | `npm_deprecate` | Mark a package/version as deprecated (real registry write, use carefully) |
 
+## Compatibility
+
+Requires **DeepSeek Harness ≥ 0.1.5-rc.1** (declared as `dsh.engines.dsh` in the package manifest, so the DSH plugin marketplace can report it) and is verified against **0.1.5-rc.1**. This build carries the DSH 0.1.5 adaptations: the strict tool-result contract (lossless-JSON snapshot, `additionalProperties: false` schema validation, and `output.render` returning `ContentBlock[]`) plus executable resolution that survives a launchd-started host whose `PATH` is only `/usr/bin:/bin`.
+
 ## Install
 
 ```bash

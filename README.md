@@ -20,7 +20,10 @@ NPM registry management for [DeepSeek Harness](https://github.com/deepseek-ai/ds
 ## Install
 
 ```bash
-# local development (link)
+# from npm (published package)
+dsh plugin --profile web add dsh-npm
+
+# or local development
 dsh plugin --profile web add link:/path/to/dsh-npm
 
 # after publishing to GitHub (repo tagged with the `dsh-plugin` topic)

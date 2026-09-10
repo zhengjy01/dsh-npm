@@ -21,6 +21,10 @@
 
 ```bash
 # 本地开发（link 方式）
+# from npm (published package)
+dsh plugin --profile web add dsh-npm
+
+# or local development
 dsh plugin --profile web add link:/path/to/dsh-npm
 
 # 发布到 GitHub 后（仓库打上 dsh-plugin topic）
